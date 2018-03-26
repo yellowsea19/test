@@ -1,15 +1,18 @@
 #  /home/pyvip/py_case
 #  _*_ coding:utf-8 _*_
 # author : yellowsea  time:2018/3/24 0024
-import unittest
-from selenium import webdriver
-from loginpage import loginPage,url
-import  HTMLTestRunner
 import  time
+import unittest
+
+import  HTMLTestRunner
+from selenium import webdriver
+
+from page.loginpage import loginPage,url
+
 data={'logname':'13418914293','password':'00000000','expect':True}
 data1={'logname':'13418914293','password':'000000000','expect':False}
 class test_login(unittest.TestCase):
-    '''登录测试'''
+    '''登录'''
     def  setUp(self):
         self.driver = webdriver.Chrome()
         self.logindriver = loginPage(self.driver)
@@ -44,7 +47,7 @@ if __name__=='__main__':
     discover=unittest.main()
     reportFile = r'd:\TestCase\report\result.html'  # 生成报告路径
     fp = open(reportFile, 'wb')  # 写入的方式打开文件
-    runner1 = HTMLTestRunner.HTMLTestRunner(stream=fp, title='123', description='456')
+    runner1 = HTMLTestRunner.HTMLTestRunner(stream=fp, title='第二课堂登录测试报告', description='登录用例的执行情况')
     runner1.run(discover)
     fp.close()
 

@@ -29,8 +29,9 @@ class configPage(object):
         '''
         使用get打开url后，最大化窗口，判断title符合预期
         '''
+        self.driver.maximize_window()
         self.driver.get(url)
-        # self.driver.maximize_window()
+
 
     def find_element(self, locator, timeout=10):
         '''定位元素，参数locator是元祖类型'''

@@ -2,8 +2,10 @@
 #  _*_ coding:utf-8 _*_
 # author : yellowsea  time:2018/3/14 0014
 from selenium import webdriver
-import config
-import time
+
+from common import config
+
+
 class activity(config.ta):
     def __init__(self):
         self.driver=webdriver.Chrome()

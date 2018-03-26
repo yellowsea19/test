@@ -2,9 +2,13 @@
 #  _*_ coding:utf-8 _*_
 # author : yellowsea  time:2018/3/24 0024
 url='http://admin2.join-inapp.com/public#/login'
-from config import  configPage
 import time
+
 from selenium import webdriver
+
+from common.config import  configPage
+
+
 class loginPage(configPage):
     usr_loc=("xpath",'//*[@id="ngform"]/bootstrap-decorator[1]/div/div/input')
     psw_loc=('xpath','//*[@id="ngform"]/bootstrap-decorator[2]/div/input[2]')
