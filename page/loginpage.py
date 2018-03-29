@@ -15,9 +15,9 @@ class loginPage(configPage):
     button_loc=('xpath','//*[@id="ngform"]/bootstrap-decorator[4]/div/input')
     tip_loc=('xpath','//*[@id="menu10003202"]')
 
-    #
-    # def __init__(self, driver):
-    #     driver = self.driver
+
+    # def __init__(self):
+    #     self.driver=webdriver.Chrome()
     def input_usr (self,text):
         return  self.send_keys(self.usr_loc,text)
     def input_psw(self,text):
@@ -39,32 +39,23 @@ class loginPage(configPage):
         except:
             result = False
             return  result
-
+    def login(self,loginname='13418914293',password='00000000'):
+        self.open(url)
+        self.input_usr(loginname)
+        self.input_psw(password)
+        self.click_button()
+        time.sleep(2)
+        try:
+            self.click_button()
+        except:pass
 
 
 
 if __name__=='__main__':
-    driver=webdriver.Chrome()
-    logindriver=loginPage(driver)
-    logindriver.open(url)
-    logindriver.input_usr('13418914293')
-    logindriver.input_psw('00000000')
-    logindriver.click_button()
-    time.sleep(2)
-    logindriver.click_button()
-    time.sleep(2)
-    f= logindriver.success()
-    print(f)
-    # try:
-    #     f=logindriver.get_tip()
-    #     if f=='首页':
-    #         f=True
-    #         print(f)
-    #     else:
-    #         print(False)
-    # except:
-    #     f='123'
-    #     print(f)
+
+    logindriver=loginPage()
+    logindriver.login()
+
 
 
 

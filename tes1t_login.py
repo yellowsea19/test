@@ -1,20 +1,17 @@
 #  /home/pyvip/py_case
 #  _*_ coding:utf-8 _*_
 # author : yellowsea  time:2018/3/24 0024
-import  time
 import unittest
-
 from selenium import webdriver
-
 from page.loginpage import loginPage,url
-
+import  time
 data={'logname':'13418914293','password':'00000000','expect':True}
 data1={'logname':'13418914293','password':'000000000','expect':False}
 class test_login(unittest.TestCase):
     '''登录测试'''
     def  setUp(self):
         self.driver = webdriver.Chrome()
-        self.logindriver = loginPage(self.driver)
+        self.logindriver = loginPage()
         self.logindriver.open(url)
     def tearDown(self):
         self.driver.quit()

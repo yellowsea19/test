@@ -14,11 +14,11 @@ import sys
 # sys.setdefaultencoding('utf-8')
 url='http://admin2.join-inapp.com/public#/login'
 
-class configPage(object):
+class configPage:
     """
     基于原生的selenium框架做了二次封装.
     """
-    def __init__(self, driver):
+    def __init__(self,driver):
         """
         启动浏览器参数化，
         """
