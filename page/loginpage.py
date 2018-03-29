@@ -39,7 +39,7 @@ class loginPage(configPage):
         except:
             result = False
             return  result
-    def login(self,loginname='13418914293',password='00000000'):
+    def login(self,loginname='13418914293',password='00000000',result=True):
         self.open(url)
         self.input_usr(loginname)
         self.input_psw(password)

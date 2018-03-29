@@ -6,6 +6,9 @@ class addmember(unittest.TestCase):
         self.driver=member(webdriver.Chrome())
         self.driver.login()
 
+    def tearDown(self):
+        self.driver.quit()
+
     def test_addmember(self):
         '''新增人员'''
         self.driver.addmember(loginname='15212341234')

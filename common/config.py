@@ -25,13 +25,15 @@ class configPage:
         # self.driver = webdriver.Firefox()
         self.driver = driver
 
+
     def open(self, url):
         '''
         使用get打开url后，最大化窗口，判断title符合预期
         '''
         self.driver.maximize_window()
         self.driver.get(url)
-
+    def quit(self):
+        self.driver.quit()
 
     def find_element(self, locator, timeout=10):
         '''定位元素，参数locator是元祖类型'''
@@ -267,13 +269,6 @@ class configPage:
     def switch_iframe(self, locator):
         return self.is_iframe(locator)
 
-if __name__ == '__main__':
-    driver = webdriver.Firefox()
-    b_driver = BasePage(driver)
-    b_driver.open("https://www.baidu.com")
-    b_driver.send_keys()
-    b_driver.click()
-    print (b_driver.get_title())
 
 
 

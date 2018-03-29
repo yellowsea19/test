@@ -17,7 +17,9 @@ class addhonor(loginpage.loginPage):
     honorjieshao=('xpath','//*[@id="uhiDescription"]')
     save=('xpath','//*[@id="editformDiv"]/bootstrap-decorator[43]/div/sf-decorator[1]/div/input')
     saveConfirmation=('xpath','/html/body/div[8]/div/div/div[3]/div/div/button[2]')
-
+    changhonor=('xpath','//*[@id="ngform"]/div[2]/bootstrap-decorator/div/div[2]/table/tbody/tr[1]/td[1]/div/label')
+    changdel=('xpath','//*[@id="toolbar_btnoption_list"]/div/button[3]')
+    delsure=('xpath','/html/body/div[8]/div/div/div[3]/div/div/button[2]')
     def mycenter(self):
         return  self.click(self.my_center_menu)
     def myhonor(self):
@@ -62,6 +64,13 @@ class addhonor(loginpage.loginPage):
         self.honor_jieshao(jieshao)
         self.save1()
         self.save2()
+    def delhonor(self):
+        self.mycenter()#点击个人中心
+        self.myhonor()
+        self.click(self.changhonor)
+        self.click(self.changdel)
+        self.click(self.delsure)
+
 
 
 if __name__=='__main__':
