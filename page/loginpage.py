@@ -4,7 +4,7 @@
 url='http://admin2.join-inapp.com/public#/login'
 import time
 
-from selenium import webdriver
+# from selenium import webdriver
 
 from common.config import  configPage
 
