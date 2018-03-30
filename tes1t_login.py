@@ -3,7 +3,7 @@
 # author : yellowsea  time:2018/3/24 0024
 import unittest
 from selenium import webdriver
-from page.loginpage import loginPage,url
+from page.login import loginPage,url
 import  time
 data={'logname':'13418914293','password':'00000000','expect':True}
 data1={'logname':'13418914293','password':'000000000','expect':False}

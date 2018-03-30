@@ -2,7 +2,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>testresult</title>
+    <title>自动化测试报告</title>
     <meta name="generator" content="HTMLTestRunner 0.8.2"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     
@@ -188,12 +188,12 @@ function showOutput(id, name) {
 --></script>
 
 <div class='heading'>
-<h1>testresult</h1>
-<p class='attribute'><strong>Start Time:</strong> 2018-03-29 18:17:48</p>
-<p class='attribute'><strong>Duration:</strong> 0:01:49.248222</p>
-<p class='attribute'><strong>Status:</strong> Pass 5</p>
+<h1>自动化测试报告</h1>
+<p class='attribute'><strong>Start Time:</strong> 2018-03-29 18:43:04</p>
+<p class='attribute'><strong>Duration:</strong> 0:02:07.749309</p>
+<p class='attribute'><strong>Status:</strong> Pass 6</p>
 
-<p class='description'>testresult</p>
+<p class='description'>第二课堂后台自动化测试报告</p>
 </div>
 
 
@@ -241,21 +241,26 @@ function showOutput(id, name) {
 </tr>
 
 <tr class='passClass'>
-    <td>test_addmyhonor.test_honor</td>
-    <td>1</td>
-    <td>1</td>
+    <td>test_login.test_login: 登录测试</td>
+    <td>2</td>
+    <td>2</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c2',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c2',2)">Detail</a></td>
 </tr>
 
 <tr id='pt2.1' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_addhonor1</div></td>
+    <td class='none'><div class='testcase'>test_01: 输入正确的用户名，正确的密码</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt2.2' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_02: 输入正确的用户名，错误的密码</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
 
 <tr class='passClass'>
-    <td>test_login.test_login: 登录测试</td>
+    <td>test_myhonor.test_honor</td>
     <td>2</td>
     <td>2</td>
     <td>0</td>
@@ -264,19 +269,19 @@ function showOutput(id, name) {
 </tr>
 
 <tr id='pt3.1' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_01: 输入正确的用户名，正确的密码</div></td>
+    <td class='none'><div class='testcase'>test_addhonor1: 新增荣誉</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
 
 <tr id='pt3.2' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_02: 输入正确的用户名，错误的密码</div></td>
+    <td class='none'><div class='testcase'>test_delhonor: 删除荣誉</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
 
 <tr id='total_row'>
     <td>Total</td>
-    <td>5</td>
-    <td>5</td>
+    <td>6</td>
+    <td>6</td>
     <td>0</td>
     <td>0</td>
     <td>&nbsp;</td>

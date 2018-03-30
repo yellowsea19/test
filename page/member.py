@@ -1,7 +1,7 @@
 from common.config import configPage
 import time
-from page import loginpage
-class member(loginpage.loginPage):
+from page import login
+class member(login.loginPage):
     oclikc=('xpath','//*[@id="menu10000146"]')#组织机构管理
     renyuan=('xpath','//*[@id="menu10000154"]')#人员信息管理
     new=('xpath','//*[@id="toolbar_btnoption_list"]/div/button[1]')#新增

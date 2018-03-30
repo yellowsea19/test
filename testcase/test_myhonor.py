@@ -1,4 +1,4 @@
-from page.myhonorpage import addhonor
+from page.myhonor import addhonor
 from selenium import webdriver
 import unittest,time
 class test_honor(unittest.TestCase):

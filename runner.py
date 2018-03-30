@@ -10,16 +10,7 @@ discover=unittest.defaultTestLoader.discover(start_dir=test_dir,pattern='test*.p
 
 reportFile=r'e:\test\report\result.html'#生成报告路径
 fp=open(reportFile,'wb')#写入的方式打开文件
-runner1=HTMLTestRunner.HTMLTestRunner(stream=fp,title='testresult',description='testresult')
+runner1=HTMLTestRunner.HTMLTestRunner(stream=fp,title='自动化测试报告',description='第二课堂后台自动化测试报告')
 runner1.run(discover)
 fp.close()
-
-
-    # discover=unittest.main()
-    # reportFile = r'd:\TestCase\report\result.html'  # 生成报告路径
-    # fp = open(reportFile, 'wb')  # 写入的方式打开文件
-    # runner1 = HTMLTestRunner.HTMLTestRunner(stream=fp, title='123', description='456')
-    # runner1.run(discover)
-    # fp.close()
-
 

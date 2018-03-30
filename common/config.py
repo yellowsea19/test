@@ -12,7 +12,8 @@ import os
 import sys
 # reload(sys)
 # sys.setdefaultencoding('utf-8')
-url='http://admin2.join-inapp.com/public#/login'
+# url='http://admin2.join-inapp.com/public#/login'
+url='http://10.0.0.223:8001/public#/login'
 
 class configPage:
     """

@@ -1,8 +1,8 @@
 from selenium import webdriver
 from common.config import configPage,url
-from page import loginpage
+from page import login
 
-class addhonor(loginpage.loginPage):
+class addhonor(login.loginPage):
     my_center_menu=('xpath','//*[@id="menu10003214"]')
     my_honor_menu=('xpath','//*[@id="menu10002800"]')
     add=('xpath','//*[@id="toolbar_btnoption_list"]/div/button[1]')#点击新增

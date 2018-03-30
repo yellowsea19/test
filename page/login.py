@@ -1,12 +1,13 @@
 #  /home/pyvip/py_case
 #  _*_ coding:utf-8 _*_
 # author : yellowsea  time:2018/3/24 0024
-url='http://admin2.join-inapp.com/public#/login'
+# url='http://admin2.join-inapp.com/public#/login'
 import time
+
 
 # from selenium import webdriver
 
-from common.config import  configPage
+from common.config import  configPage,url
 
 
 class loginPage(configPage):
