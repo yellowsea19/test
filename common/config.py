@@ -13,7 +13,11 @@ import sys
 # reload(sys)
 # sys.setdefaultencoding('utf-8')
 # url='http://admin2.join-inapp.com/public#/login'
+# loginname='13418914293'
+# password='00000000'
 url='http://10.0.0.223:8001/public#/login'
+loginname='13499999999'
+password='11111111'
 
 class configPage:
     """

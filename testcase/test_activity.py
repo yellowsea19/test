@@ -5,6 +5,7 @@ from selenium import webdriver
 from page.activity import activitypage
 import unittest
 
+
 class test_activity(unittest.TestCase):
     def setUp(self):
         self.driver=activitypage(webdriver.Chrome())
@@ -12,5 +13,7 @@ class test_activity(unittest.TestCase):
 
     def test_addactivity(self):
         self.driver.activity()
-
-
+    def test_audit1(self):
+        self.driver.audit1()
+    def test_audit2(self):
+        self.driver.audit1()

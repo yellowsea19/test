@@ -1,22 +1,13 @@
 #  /home/pyvip/py_case
 #  _*_ coding:utf-8 _*_
 # author : yellowsea  time:2018/3/24 0024
-# url='http://admin2.join-inapp.com/public#/login'
 import time
-
-
-# from selenium import webdriver
-
-from common.config import  configPage,url
-
-
+from common.config import  configPage,url,loginname,password
 class loginPage(configPage):
     usr_loc=("xpath",'//*[@id="ngform"]/bootstrap-decorator[1]/div/div/input')
     psw_loc=('xpath','//*[@id="ngform"]/bootstrap-decorator[2]/div/input[2]')
     button_loc=('xpath','//*[@id="ngform"]/bootstrap-decorator[4]/div/input')
     tip_loc=('xpath','//*[@id="menu10003202"]')
-
-
     # def __init__(self):
     #     self.driver=webdriver.Chrome()
     def input_usr (self,text):
@@ -40,7 +31,7 @@ class loginPage(configPage):
         except:
             result = False
             return  result
-    def login(self,loginname='13418914293',password='00000000',result=True):
+    def login(self,loginname=loginname,password=password,result=True):
         self.open(url)
         self.input_usr(loginname)
         self.input_psw(password)
