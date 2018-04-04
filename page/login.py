@@ -40,6 +40,7 @@ class loginPage(configPage):
         try:
             self.click_button()
         except:pass
+        time.sleep(3)
 
 
 

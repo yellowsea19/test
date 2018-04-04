@@ -1,7 +1,7 @@
 from selenium import webdriver
 from common.config import configPage,url
 from page import login
-
+import time
 class addhonor(login.loginPage):
     my_center_menu=('xpath','//*[@id="menu10003214"]')
     my_honor_menu=('xpath','//*[@id="menu10002800"]')
@@ -13,7 +13,7 @@ class addhonor(login.loginPage):
     zuopinname=('xpath','//*[@id="editformDiv"]/bootstrap-decorator[15]/div/div/input')
     honorname=('xpath','//*[@id="editformDiv"]/bootstrap-decorator[17]/div/div/input')
     starttime=('xpath','//*[@id="uhiDateStart"]')
-    starttime1=('xpath','/html/body/div[12]/div[1]/div[2]/table/tbody/tr[4]/td[5]')
+    starttime1=('xpath','/html/body/div[12]/div[1]/div[2]/table/tbody/tr[1]/td[1]')
     honorjieshao=('xpath','//*[@id="uhiDescription"]')
     save=('xpath','//*[@id="editformDiv"]/bootstrap-decorator[43]/div/sf-decorator[1]/div/input')
     saveConfirmation=('xpath','/html/body/div[8]/div/div/div[3]/div/div/button[2]')
@@ -70,6 +70,7 @@ class addhonor(login.loginPage):
         self.click(self.changhonor)
         self.click(self.changdel)
         self.click(self.delsure)
+        time.sleep(3)
 
 
 

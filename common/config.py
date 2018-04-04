@@ -8,16 +8,12 @@ from selenium.webdriver.support.ui import WebDriverWait
 import time
 import os
 
-# 下面这三行代码是为了避免中文乱码问题
-import sys
-# reload(sys)
-# sys.setdefaultencoding('utf-8')
-# url='http://admin2.join-inapp.com/public#/login'
-# loginname='13418914293'
-# password='00000000'
-url='http://10.0.0.223:8001/public#/login'
-loginname='13499999999'
-password='11111111'
+url='http://admin2.join-inapp.com/public#/login'
+loginname='13418914293'
+password='00000000'
+# url='http://10.0.0.223:8001/public#/login'
+# loginname='13499999999'
+# password='11111111'
 
 class configPage:
     """

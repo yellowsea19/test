@@ -4,7 +4,7 @@ from page.member import member
 class addmember(unittest.TestCase):
     def setUp(self):
         self.driver=member(webdriver.Chrome())
-        self.driver.login(loginname=13499999999,password=11111111)
+        self.driver.login()
 
     def tearDown(self):
         self.driver.quit()
